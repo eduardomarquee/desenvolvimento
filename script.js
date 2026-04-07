@@ -114,14 +114,18 @@ const setupForm = () => {
 
     const data = new FormData(contactForm);
     const name = (data.get("name") || "").toString().trim();
-    const email = (data.get("email") || "").toString().trim();
+    const subject = (data.get("subject") || "").toString().trim();
     const message = (data.get("message") || "").toString().trim();
 
-    const subject = encodeURIComponent(`Novo contato - ${name}`);
-    const body = encodeURIComponent(`Nome: ${name}\nEmail: ${email}\n\nProjeto:\n${message}`);
+    const whatsappMessage = encodeURIComponent(
+      `Olá! Vim pelo site da Marquee Dev.%0A%0A` +
+      `Nome: ${name}%0A` +
+      `Assunto: ${subject}%0A%0A` +
+      `Projeto:%0A${message}`
+    );
 
-    formFeedback.textContent = "Abrindo seu aplicativo de email para concluir o envio.";
-    window.location.href = `mailto:contato@marquestech.com.br?subject=${subject}&body=${body}`;
+    formFeedback.textContent = "Abrindo o WhatsApp para concluir o envio.";
+    window.open(`https://wa.me/5551993091025?text=${whatsappMessage}`, "_blank");
   });
 };
 
