@@ -1,0 +1,479 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marquee Dev | Desenvolvimento Web, Apps e Softwares</title>
+  <meta
+    name="description"
+    content="Marquee Dev desenvolve sites, aplicativos e softwares sob medida para empresas que precisam de soluções digitais bem construídas."
+  >
+  <link rel="icon" type="image/png" href="./public/lua.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="App">
+    <nav class="navbar" data-navbar>
+      <div class="navbar-container">
+        <a class="logo" href="#home">
+          <img class="logo-icon" src="./public/lua.png" alt="Lua Marquee Dev">
+          <span>Marquee <span class="accent-text">Dev</span></span>
+        </a>
+
+        <div class="desktop-menu">
+          <a href="#home" class="nav-link">Início</a>
+          <a href="#services" class="nav-link">Serviços</a>
+          <a href="#portfolio" class="nav-link">Portfólio</a>
+          <a href="#about" class="nav-link">Sobre</a>
+          <a href="#contact" class="nav-link">Contato</a>
+        </div>
+
+        <button class="mobile-icon" type="button" aria-label="Abrir menu" aria-expanded="false" data-menu-toggle>
+          <span class="menu-bars"></span>
+        </button>
+      </div>
+
+      <div class="mobile-menu" data-mobile-menu hidden>
+        <a href="#home" class="mobile-link">Início</a>
+        <a href="#services" class="mobile-link">Serviços</a>
+        <a href="#portfolio" class="mobile-link">Portfólio</a>
+        <a href="#about" class="mobile-link">Sobre</a>
+        <a href="#contact" class="mobile-link">Contato</a>
+      </div>
+    </nav>
+
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h1>
+          <span class="hero-prefix">Desenvolvimento web, apps e softwares com</span>
+          <span class="highlight" data-hero-word>execução</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          A Marquee Dev projeta e desenvolve soluções digitais sob medida, com estrutura clara, código bem organizado e foco em uso real.
+        </p>
+
+        <div class="hero-buttons">
+          <a
+            class="btn btn-primary"
+            href="https://wa.me/5551993091025?text=Ol%C3%A1!%20Gostaria%20de%20iniciar%20um%20projeto."
+            target="_blank"
+            rel="noreferrer"
+          >
+            Falar sobre o projeto
+            <span class="btn-icon">↗</span>
+          </a>
+          <a class="btn btn-secondary" href="#portfolio">
+            Ver projetos
+            <span class="btn-icon">→</span>
+          </a>
+        </div>
+
+        <div class="hero-points">
+          <span tabindex="0" data-hero-pill>Desenvolvimento web</span>
+          <span tabindex="0" data-hero-pill>Aplicativos</span>
+          <span tabindex="0" data-hero-pill>Softwares Nativos</span>
+        </div>
+      </div>
+
+      <a class="scroll-indicator" href="#services">
+        <span>Descubra mais</span>
+        <span class="scroll-arrow">↓</span>
+      </a>
+
+      <div class="hero-background" aria-hidden="true">
+        <div class="planet"></div>
+        <div class="flying-rockets">
+          <span class="rocket rocket-1"></span>
+          <span class="rocket rocket-2"></span>
+          <span class="rocket rocket-3"></span>
+          <span class="rocket rocket-v1"></span>
+          <span class="rocket rocket-v2"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="positioning-section">
+      <div class="container">
+        <div class="positioning-grid reveal">
+          <article class="positioning-card" tabindex="0" data-interactive-card>
+            <span class="positioning-label">Para quem</span>
+            <h3>Empresas que precisam construir ou evoluir soluções digitais</h3>
+            <p>Atendemos negócios que precisam de um site profissional, um sistema próprio ou um aplicativo para resolver demandas reais da operação.</p>
+          </article>
+          <article class="positioning-card" tabindex="0" data-interactive-card>
+            <span class="positioning-label">Quando entramos</span>
+            <h3>Quando a empresa precisa de desenvolvimento de verdade</h3>
+            <p>Se a solução atual não atende mais, se existem processos manuais demais ou se o projeto exige regra de negócio própria, esse é o nosso espaço.</p>
+          </article>
+          <article class="positioning-card" tabindex="0" data-interactive-card>
+            <span class="positioning-label">O que entregamos</span>
+            <h3>Software com interface, lógica e estrutura bem resolvidas</h3>
+            <p>Nosso foco está em entregar aplicações funcionais, estáveis e coerentes com a necessidade técnica e operacional de cada projeto.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>O que podemos construir para sua <span class="highlight">empresa</span></h2>
+          <p>Desenvolvemos desde interfaces públicas até sistemas internos, sempre com foco em implementação sob medida e uso real.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card reveal" tabindex="0" data-interactive-card>
+            <div class="card-icon">01</div>
+            <h3>Desenvolvimento Web</h3>
+            <p>Sites e aplicações web personalizados e responsivos, construídos com tecnologias modernas.</p>
+          </article>
+          <article class="service-card reveal" tabindex="0" data-interactive-card>
+            <div class="card-icon">02</div>
+            <h3>Aplicativos Móveis</h3>
+            <p>Aplicativos nativos e multiplataforma para iOS e Android com experiências de usuário refinadas.</p>
+          </article>
+          <article class="service-card reveal" tabindex="0" data-interactive-card>
+            <div class="card-icon">03</div>
+            <h3>Softwares Corporativos</h3>
+            <p>Sistemas robustos de ERP, CRM e soluções SaaS feitos sob medida para sua operação.</p>
+          </article>
+          <article class="service-card reveal" tabindex="0" data-interactive-card>
+            <div class="card-icon">04</div>
+            <h3>Soluções em Nuvem</h3>
+            <p>Infraestrutura escalável, arquiteturas serverless e automação para sustentar crescimento.</p>
+          </article>
+          <article class="service-card reveal" tabindex="0" data-interactive-card>
+            <div class="card-icon">05</div>
+            <h3>Integração de IA</h3>
+            <p>Automação inteligente e insights para acelerar processos e melhorar decisões.</p>
+          </article>
+          <article class="service-card reveal" tabindex="0" data-interactive-card>
+            <div class="card-icon">06</div>
+            <h3>Segurança Cibernética</h3>
+            <p>Auditorias, correções e proteção de ativos digitais contra ameaças em evolução.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="portfolio-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>Projetos reais para problemas <span class="highlight">reais</span></h2>
+          <p>Alguns projetos desenvolvidos para clientes com necessidades diferentes, todos resolvidos com desenvolvimento sob medida.</p>
+        </div>
+
+        <div class="portfolio-grid">
+          <article class="project-card reveal" tabindex="0" data-interactive-card>
+            <div class="project-image">
+              <img src="./prints/Recicle.png" alt="Projeto Recicle">
+              <div class="project-overlay">
+                <div class="project-actions">
+                  <a class="btn btn-secondary btn-small" href="https://www.leandrorecicle.com.br/" target="_blank" rel="noreferrer">Site</a>
+                  <button class="btn btn-primary btn-small" type="button" data-modal-image="./prints/Recicle.png" data-modal-title="Recicle">Demo</button>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-category">Institucional</span>
+              <h3>Leandro Recicle</h3>
+              <p>O foco aqui foi deixar o negócio mais profissional no digital e facilitar o primeiro contato.</p>
+            </div>
+          </article>
+
+          <article class="project-card reveal" tabindex="0" data-interactive-card>
+            <div class="project-image">
+              <img src="./prints/cerrajeros.png" alt="Projeto Cerrajeros">
+              <div class="project-overlay">
+                <div class="project-actions">
+                  <a class="btn btn-secondary btn-small" href="https://cerrajerosllavesdecoches24h.es/" target="_blank" rel="noreferrer">Site</a>
+                  <button class="btn btn-primary btn-small" type="button" data-modal-image="./prints/cerrajeros.png" data-modal-title="Cerrajeros">Demo</button>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-category">Serviço Urgente</span>
+              <h3>Cerrajeros 24h</h3>
+              <p>Interface direta para urgência, facilitando a decisão rápida do usuário em situações críticas.</p>
+            </div>
+          </article>
+
+          <article class="project-card reveal" tabindex="0" data-interactive-card>
+            <div class="project-image">
+              <img src="./prints/agropets.png" alt="Projeto Agropets">
+              <div class="project-overlay">
+                <div class="project-actions">
+                  <a class="btn btn-secondary btn-small" href="https://www.agropetscao.com.br/" target="_blank" rel="noreferrer">Site</a>
+                  <button class="btn btn-primary btn-small" type="button" data-modal-image="./prints/agropets.png" data-modal-title="Agropets">Demo</button>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-category">E-commerce</span>
+              <h3>Agro Pets Cão</h3>
+              <p>Comunicação próxima e conectada com o público da marca, ganhando presença amigável no nicho.</p>
+            </div>
+          </article>
+
+          <article class="project-card reveal" tabindex="0" data-interactive-card>
+            <div class="project-image">
+              <img src="./prints/gagosushi.png" alt="Projeto Gago Sushi">
+              <div class="project-overlay">
+                <div class="project-actions">
+                  <a class="btn btn-secondary btn-small" href="https://gagosushi.vercel.app/" target="_blank" rel="noreferrer">Site</a>
+                  <button class="btn btn-primary btn-small" type="button" data-modal-image="./prints/gagosushi.png" data-modal-title="Gago Sushi">Demo</button>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-category">Gastronomia</span>
+              <h3>Gago Sushi</h3>
+              <p>Projeto com identidade visual forte e apresentação mais marcante para o universo gastronômico.</p>
+            </div>
+          </article>
+
+          <article class="project-card reveal" tabindex="0" data-interactive-card>
+            <div class="project-image">
+              <img src="./prints/lucasfilmmaker.png" alt="Projeto Lucas Filmmaker">
+              <div class="project-overlay">
+                <div class="project-actions">
+                  <a class="btn btn-secondary btn-small" href="https://lucasfilmmakeer.com.br/" target="_blank" rel="noreferrer">Site</a>
+                  <button class="btn btn-primary btn-small" type="button" data-modal-image="./prints/lucasfilmmaker.png" data-modal-title="Lucas Filmmaker">Demo</button>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-category">Audiovisual</span>
+              <h3>Lucas Filmmakeer</h3>
+              <p>Portfólio que valoriza o trabalho visual e comunica autoridade para novos clientes premium.</p>
+            </div>
+          </article>
+
+          <article class="project-card reveal" tabindex="0" data-interactive-card>
+            <div class="project-image">
+              <img src="./prints/nando filmes.png" alt="Projeto Nando Filmes">
+              <div class="project-overlay">
+                <div class="project-actions">
+                  <a class="btn btn-secondary btn-small" href="https://eduardomarquesmartins.github.io/nandorosafilmes/" target="_blank" rel="noreferrer">Site</a>
+                  <button class="btn btn-primary btn-small" type="button" data-modal-image="./prints/nando filmes.png" data-modal-title="Nando Filmes">Demo</button>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-category">Audiovisual</span>
+              <h3>Nando Filmes</h3>
+              <p>Projeto com foco em impacto visual, portfólio autoral e apresentação forte da identidade criativa.</p>
+            </div>
+          </article>
+
+          <article class="project-card reveal" tabindex="0" data-interactive-card>
+            <div class="project-image">
+              <img src="./prints/europeancar.png" alt="Projeto European Car">
+              <div class="project-overlay">
+                <div class="project-actions">
+                  <a class="btn btn-secondary btn-small" href="https://europeservicos.netlify.app/" target="_blank" rel="noreferrer">Site</a>
+                  <button class="btn btn-primary btn-small" type="button" data-modal-image="./prints/europeancar.png" data-modal-title="European Car">Demo</button>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-category">Serviços</span>
+              <h3>Europe Serviços</h3>
+              <p>Projeto com hierarquia visual clara e navegação objetiva para facilitar o entendimento da oferta.</p>
+            </div>
+          </article>
+
+          <article class="project-card reveal" tabindex="0" data-interactive-card>
+            <div class="project-image">
+              <img src="./prints/econti.png" alt="Projeto Econti">
+              <div class="project-overlay">
+                <div class="project-actions">
+                  <a class="btn btn-secondary btn-small" href="https://www.econticomigo.com.br/" target="_blank" rel="noreferrer">Site</a>
+                  <button class="btn btn-primary btn-small" type="button" data-modal-image="./prints/econti.png" data-modal-title="Econti">Demo</button>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-category">Institucional</span>
+              <h3>Econti</h3>
+              <p>Interface organizada para transmitir clareza, proximidade e apresentação profissional da marca.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="decision-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>Quando faz sentido falar com a <span class="highlight">Marquee Dev</span></h2>
+          <p>Se a sua necessidade exige construção, integração ou evolução de software, provavelmente conseguimos ajudar.</p>
+        </div>
+
+        <div class="decision-grid">
+          <article class="decision-card reveal" tabindex="0" data-interactive-card>
+            <h3>Você precisa construir um site ou sistema do zero</h3>
+            <p>Quando o projeto precisa nascer com estrutura correta, tecnologia adequada e implementação bem feita.</p>
+          </article>
+          <article class="decision-card reveal" tabindex="0" data-interactive-card>
+            <h3>Sua operação depende de processos manuais</h3>
+            <p>Planilhas, retrabalho e ferramentas soltas começam a limitar a operação e pedem uma solução própria.</p>
+          </article>
+          <article class="decision-card reveal" tabindex="0" data-interactive-card>
+            <h3>Você precisa de um sistema próprio</h3>
+            <p>Quando a regra de negócio é específica demais para se encaixar bem em software pronto.</p>
+          </article>
+          <article class="decision-card reveal" tabindex="0" data-interactive-card>
+            <h3>Existe um app ou produto digital para tirar do papel</h3>
+            <p>Quando a ideia precisa sair da definição e virar uma entrega funcional, com front-end, lógica e estrutura bem resolvidas.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text reveal">
+            <h2>Como transformamos demanda em entrega com <span class="highlight">critério</span></h2>
+            <p>
+              Cada projeto começa com entendimento técnico e definição clara do que precisa ser construído, adaptado ou integrado.
+            </p>
+            <p>
+              Trabalhamos com foco em arquitetura, interface, implementação e entrega funcional, sem inflar o discurso além do que o software precisa resolver.
+            </p>
+
+            <div class="stats-grid">
+              <div class="stat-item">
+                <h3>1</h3>
+                <p>Diagnóstico e escopo</p>
+              </div>
+              <div class="stat-item">
+                <h3>2</h3>
+                <p>Design e estrutura</p>
+              </div>
+              <div class="stat-item">
+                <h3>3</h3>
+                <p>Desenvolvimento e entrega</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-image reveal">
+            <div class="image-wrapper">
+              <img src="./public/walp.jpg" alt="Visual da Marquee Dev">
+              <div class="image-accent"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="contact-wrapper">
+          <div class="contact-info reveal">
+            <h2>Se existe um projeto importante para sua empresa, vamos conversar com mais <span class="highlight">clareza</span></h2>
+            <p>Nos conte o que precisa ser construído, evoluído ou integrado. A partir disso, definimos a melhor direção para site, aplicativo ou software.</p>
+
+            <div class="contact-details">
+              <div class="detail-item"><span class="detail-icon">Canal</span><span>Atendimento direto no WhatsApp</span></div>
+              <div class="detail-item"><span class="detail-icon">Escopo</span><span>Levantamento conforme a realidade do projeto</span></div>
+              <div class="detail-item"><span class="detail-icon">Entrega</span><span>Desenvolvimento visual e técnico no mesmo fluxo</span></div>
+            </div>
+          </div>
+
+          <form class="contact-form reveal" data-contact-form>
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Seu nome" required>
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" placeholder="Seu email" required>
+            </div>
+            <div class="form-group">
+              <textarea name="message" placeholder="Conte o que você precisa" rows="5" required></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">
+              Enviar mensagem
+              <span class="btn-icon">➤</span>
+            </button>
+            <p class="form-feedback" data-form-feedback></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <p>Desenvolvimento web, apps e softwares sob medida com foco em execução, clareza técnica e entrega funcional.</p>
+          </div>
+
+          <div class="footer-links">
+            <h4>Links</h4>
+            <a href="#home">Início</a>
+            <a href="#services">Serviços</a>
+            <a href="#portfolio">Trabalhos</a>
+            <a href="#contact">Contato</a>
+          </div>
+
+          <div class="footer-social">
+            <h4>Siga-nos</h4>
+            <div class="social-icons">
+              <a href="#">X</a>
+              <a href="#">in</a>
+              <a href="#">GH</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; <span data-current-year></span> MARQUEE DEV. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <a
+      href="https://wa.me/5551993091025"
+      class="whatsapp-float"
+      target="_blank"
+      rel="noreferrer"
+      aria-label="Chat no WhatsApp"
+    >
+      <svg viewBox="0 0 448 512" aria-hidden="true" focusable="false">
+        <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.7 17.8 69.7 27.2 106.2 27.2 122.4 0 222-99.6 222-222 0-59.3-23-115.1-65-157.1zM223.9 446.3c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 364.7l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.7-186.6 184.7zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-5.5-2.8-23.2-8.5-44.2-27.1-16.4-14.6-27.4-32.7-30.6-38.1-3.2-5.5-.3-8.5 2.4-11.3 2.5-2.5 5.5-6.5 8.3-9.7 2.8-3.3 3.7-5.6 5.5-9.3 1.9-3.7.9-5.6-1.9-8.4-2.8-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 13.2 5.8 23.5 9.2 31.6 11.8 13.3 4.2 25.4 3.6 35 2.2 10.7-1.5 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path>
+      </svg>
+    </a>
+
+    <div class="shooting-stars-container" aria-hidden="true">
+      <div class="star star-1"></div>
+      <div class="star star-2"></div>
+      <div class="star star-3"></div>
+    </div>
+  </div>
+
+  <div class="video-modal-overlay" data-modal hidden>
+    <div class="video-modal-content">
+      <div class="modal-header">
+        <h3 data-modal-title>Demo</h3>
+        <button class="close-btn" type="button" aria-label="Fechar" data-modal-close>&times;</button>
+      </div>
+      <div class="video-wrapper">
+        <img src="" alt="" class="modal-image-content" data-modal-image-preview>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./script.js"></script>
+</body>
+</html>
+
+
