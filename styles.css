@@ -138,6 +138,7 @@ img {
   object-fit: contain;
   filter: drop-shadow(0 0 10px rgba(255, 77, 77, 0.18));
   flex-shrink: 0;
+  animation: rotateLogo 20s linear infinite;
 }
 
 .desktop-menu {
@@ -425,6 +426,15 @@ img {
 
   100% {
     background-position-x: -200%;
+  }
+}
+
+@keyframes rotateLogo {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 
