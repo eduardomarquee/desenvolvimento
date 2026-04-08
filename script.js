@@ -16,7 +16,10 @@ const heroPills = document.querySelectorAll("[data-hero-pill]");
 
 const heroWords = [
   "execução",
+  "estratégia",
+  "tecnologia",
   "estrutura",
+  "resultados",
 ];
 let heroIndex = 0;
 
@@ -88,22 +91,30 @@ const observeReveal = () => {
 const animateHeroWord = () => {
   if (!heroWord) return;
 
-  const nextWord = heroWords[heroIndex];
-  heroWord.textContent = "";
+  // Garantir estado inicial
+  heroWord.classList.add("active");
 
-  let charIndex = 0;
-  const intervalId = window.setInterval(() => {
-    heroWord.textContent += nextWord[charIndex];
-    charIndex += 1;
+  setInterval(() => {
+    // 1. Animação de saída
+    heroWord.classList.remove("active");
+    heroWord.classList.add("swap-out");
 
-    if (charIndex < nextWord.length) return;
-
-    window.clearInterval(intervalId);
-    window.setTimeout(() => {
+    setTimeout(() => {
+      // 2. Troca o texto e reseta para a posição inferior (sem transição)
       heroIndex = (heroIndex + 1) % heroWords.length;
-      animateHeroWord();
-    }, 1400);
-  }, 120);
+      heroWord.textContent = heroWords[heroIndex];
+      
+      heroWord.classList.remove("swap-out");
+      heroWord.classList.add("swap-in");
+
+      // Forçar reflow para que o navegador processe a remoção da transição
+      void heroWord.offsetWidth;
+
+      // 3. Animação de entrada
+      heroWord.classList.remove("swap-in");
+      heroWord.classList.add("active");
+    }, 600); // Aguarda o fim da saída (0.6s definidos no CSS)
+  }, 3000); // Intervalo entre trocas
 };
 
 const setupForm = () => {

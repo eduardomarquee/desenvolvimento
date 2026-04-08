@@ -272,6 +272,36 @@ img {
   display: inline-flex;
 }
 
+.hero-word-wrapper {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  vertical-align: top;
+  height: 1.2em; /* Mantém a altura fixa para evitar pulos no layout */
+}
+
+[data-hero-word] {
+  display: inline-block;
+  position: relative;
+  transition: transform 0.6s cubic-bezier(0.76, 0, 0.24, 1), opacity 0.4s ease;
+}
+
+[data-hero-word].swap-out {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+[data-hero-word].swap-in {
+  transform: translateY(100%);
+  opacity: 0;
+  transition: none;
+}
+
+[data-hero-word].active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
 .hero-subtitle {
   font-size: 1.1rem;
   color: var(--text-secondary);
