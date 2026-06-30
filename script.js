@@ -226,6 +226,11 @@ if (currentYear) {
   currentYear.textContent = new Date().getFullYear().toString();
 }
 
+document.querySelector("[data-whatsapp]")?.addEventListener("click", (e) => {
+  e.preventDefault();
+  window.open(e.currentTarget.href, "_blank");
+});
+
 menuToggle?.addEventListener("click", toggleMenu);
 
 document.querySelectorAll(".mobile-link").forEach((link) => {
