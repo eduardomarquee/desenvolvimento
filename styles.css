@@ -266,6 +266,8 @@ img {
   line-height: 1.2;
   margin-bottom: 20px;
   font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .hero-prefix {
@@ -715,11 +717,9 @@ img {
 }
 
 .section-header {
-  text-align: center;
+  text-align: left;
   margin-bottom: 60px;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 800px;
 }
 
 .section-header h2,
@@ -727,6 +727,8 @@ img {
 .contact-info h2 {
   font-size: 3rem;
   margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
 }
 
 .section-header p,
